@@ -1,0 +1,14 @@
+{"timestamp": "12:22:48.357", "elapsed_s": 4, "frame": 255, "type": "asteroid_shot"}
+{"timestamp": "12:22:48.358", "elapsed_s": 4, "frame": 255, "type": "asteroid_split"}
+{"timestamp": "12:22:48.391", "elapsed_s": 4, "frame": 257, "type": "asteroid_shot"}
+{"timestamp": "12:22:48.407", "elapsed_s": 4, "frame": 258, "type": "asteroid_shot"}
+{"timestamp": "12:22:50.865", "elapsed_s": 6, "frame": 408, "type": "asteroid_shot"}
+{"timestamp": "12:22:50.865", "elapsed_s": 6, "frame": 408, "type": "asteroid_split"}
+{"timestamp": "12:22:50.898", "elapsed_s": 6, "frame": 410, "type": "asteroid_shot"}
+{"timestamp": "12:22:50.914", "elapsed_s": 6, "frame": 411, "type": "asteroid_shot"}
+{"timestamp": "12:22:50.978", "elapsed_s": 6, "frame": 415, "type": "asteroid_shot"}
+{"timestamp": "12:22:53.587", "elapsed_s": 9, "frame": 575, "type": "asteroid_shot"}
+{"timestamp": "12:22:53.587", "elapsed_s": 9, "frame": 575, "type": "asteroid_split"}
+{"timestamp": "12:22:53.667", "elapsed_s": 9, "frame": 580, "type": "asteroid_shot"}
+{"timestamp": "12:22:53.667", "elapsed_s": 9, "frame": 580, "type": "asteroid_split"}
+{"timestamp": "12:22:57.706", "elapsed_s": 13, "frame": 828, "type": "player_hit"}
