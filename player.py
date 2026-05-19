@@ -9,6 +9,7 @@ from constants import (
     PLAYER_SHOOT_COOLDOWN_SECONDS,
     PLAYER_TURN_SPEED,
     PLAYER_SPEED,
+    PLAYER_SPRINT,
 )
 from shot import Shot
 
@@ -44,7 +45,7 @@ class Player(CircleShape):
             self.rotate(dt)
 
         if keys[pygame.K_w]:
-            self.move(dt)
+            self.move(dt, keys[pygame.K_LSHIFT])
 
         if keys[pygame.K_s]:
             self.move(dt)
@@ -52,10 +53,12 @@ class Player(CircleShape):
         if keys[pygame.K_SPACE]:
             self.shot(dt)
 
-    def move(self, dt):
-        unit_vector = pygame.Vector2(0, 1)
-        rotated_vector = unit_vector.rotate(self.rotation)
-        rotated_with_speed_vector = rotated_vector * PLAYER_SPEED * dt
+    def move(self, dt, sprint: bool = False):
+        player_speed = PLAYER_SPEED + PLAYER_SPRINT if sprint else PLAYER_SPEED
+
+        rotated_vector = pygame.Vector2(0, 1).rotate(self.rotation)
+        rotated_with_speed_vector = rotated_vector * player_speed * dt
+
         self.position += rotated_with_speed_vector
 
     def shot(self, dt):
