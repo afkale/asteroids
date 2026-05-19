@@ -12,3 +12,4 @@
 [ ] Add a shield power-up
 [ ] Add a speed power-up
 [ ] Add bombs that can be dropped
+[x] Add vim key binds
