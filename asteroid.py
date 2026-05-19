@@ -5,11 +5,13 @@ import pygame
 from circleshape import CircleShape
 from constants import ASTEROID_MIN_RADIUS, LINE_WIDTH
 from logger import log_event
+from player import Player
 
 
 class Asteroid(CircleShape):
     def __init__(self, x, y, radius):
         super().__init__(x, y, radius)
+        self.points_value = radius * 10
 
     def draw(self, screen):
         pygame.draw.circle(screen, "white", self.position, self.radius, LINE_WIDTH)
@@ -17,10 +19,11 @@ class Asteroid(CircleShape):
     def update(self, dt):
         self.position += self.velocity * dt
 
-    def kill(self) -> None:
+    def kill(self, player: Player) -> None:
         log_event("asteroid_shot")
 
         super().kill()
+        player.points += self.points_value
         if self.radius == ASTEROID_MIN_RADIUS:
             return
 

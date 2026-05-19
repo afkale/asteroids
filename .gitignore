@@ -13,3 +13,5 @@ wheels/
 game_state.jsonl
 tags
 /tags
+/game_events.jsonl
+/game_state.jsonl

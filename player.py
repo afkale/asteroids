@@ -17,6 +17,7 @@ class Player(CircleShape):
     def __init__(self, x, y):
         super().__init__(x, y, PLAYER_RADIUS)
         self.rotation = 0
+        self.points = 0
         self.shot_cooldown = PLAYER_SHOOT_COOLDOWN_SECONDS
 
     def rotate(self, dt):
